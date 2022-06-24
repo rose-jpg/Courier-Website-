@@ -6,7 +6,6 @@
     text-decoration: none;
 }
 body{
-   font-family: sans-serif;
    line-height: 1.6;
    background-color: #333;
    color: #fff;
@@ -105,10 +104,7 @@ span{
     right: 0px;
 }
 
-p{
-    font-weight: 100;
-    font-size: 30px;
-}
+
 .contact{
     display: flex;
     flex-direction: row;
@@ -178,40 +174,250 @@ nav ul li a:hover{
 }
 
 nav ul li a::after{
-    content: '';
-    position: absolute;
-    background-color: rgb(247, 123, 77);
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
+    
+    
 }
 nav ul li a:hover::after {
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:768px) {
-    nav{
-        display: none;
-    }
-
+.tracking-session{
+    padding: 100px;
+}
+input[type=text]{
+   width:500px;
+   height:50px;
+   outline: none;
+   border: 2px solid #ccc;
+}
+input[type=submit]{
+    height: 50px;
+    padding: 15px;
+    margin-left: 20px;
+    background-color: rgb(247,123,77);
+    border: 1px solid rgb(247,123,77);
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+}
+.tracking-session h2{
+    margin-bottom:20px;
+}
+.tracking-session{
+    background: linear-gradient(rgba(236, 98, 47, 0.9),rgba(236, 98,47, 0.9)),
+                url('globe.jpg')no-repeat center center/cover;
+                
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
     
 }
+img{
+    width: 400px;
+}
+.courier-service h2{
+    font-size: 50px;
+    line-height: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin-bottom: 50px;
+    
+}
+.courier-service{
+   color: #333;
+    background-color: white;
+    padding: 100px;
+   
+}
+.courier-service h5{
+    font-size: 12px;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    color: gray;
+}
+.courier-dash h4{
+    padding: 1px;
+    width: 25px;
+    height: 1px;
+    background-color: rgb(247,123,77);
+    margin-left: 10px;
+}
+.courier-dash {
+    display: flex;
+    align-items: center;
+}
+.icons{
+    font-size: 70px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+    color: rgb(247,123,77);
+    
+}
+.services h4{
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    color: #333;
+}
+.services p{
+    color: gray;
+}
+.keyfeature{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    padding: 100px;
+    background-color: white;
+   
+}
+button.key{
+  font-weight: 900;
+  font-size: 15px;
+  background-color: rgb(247,123,77);
+  border: 0;
+  margin-bottom: 20px;
+}
+.keyfeature h5{
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    color: #333;
+    font-weight: 900;
+}
+.keyfeature p{
+    color: gray;
+    text-align: left;
+}
+.about {
+    color: black;
+    
+    
+}
+ h6{
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    font-size: 12px;
+    color: gray;
+}
+.about h1{
+    font-size: 40px;
+    line-height: 3.5rem;
+    font-weight: 900;
+    color: #333;
+}
+.more-section{
+    color: black;
+    
+    background:  linear-gradient(rgba(236, 97, 47, 0.757),rgba(255, 95, 37, 0.757)),
+    url('globe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.more-section h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    padding:100px;
+    line-height: 4.5rem;
+    padding-top: 200px;
+
+  
+    
+}
+.nav-down{
+    display: flex;
+    margin-left: 60px;
+    
+}
+.nav-down h4{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: -90px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+ 
+    
+}
+.nav-down >h4 >a{
+    color: white;
+    position: relative;
+    
+}
+.nav-down h4 a::after{
+    content: '';
+    position: absolute;
+    background-color: #333;
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+    
+}
+.nav-down h4 a:hover::after{
+    width:100% ;
+    
+
+}
+.nav-down h4 a:hover{
+    color: #333;
+}
+.courier-news{
+    background-color: white;
+    color: #333;
+   
+  
+}
+.courier-news h1{
+    font-size: 40px;
+    line-height: 3rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 30px;
+    
+}
+.blogs{
+    display: flex;
+   gap: 1rem;
+  justify-content: center;
+
+}
+.blog-1 button{
+    color: gray;
+    margin-top: 10px;
+    border: 1px solid gray;
+    font-weight: 900;
+    padding: 10px;
+    font-size: 12px;
+}
+.blog-1 h3{
+    margin-top: 2px;
+}
+footer{
+    color: grey;
+}
+.anim {
+    opacity: 0;
+}
+
+@keyframes anim1 {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to  {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
