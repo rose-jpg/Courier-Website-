@@ -74,3 +74,39 @@ observer = new IntersectionObserver((entries) => {
 images.forEach(image => {
     observer.observe(image)
 })
+const keys= document.querySelectorAll('.anim-left');
+
+observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+        if(entry.intersectionRatio > 0) {
+            entry.target.style.animation = `anim3 2s ${entry.target.dataset.delay} forwards ease-in`;
+        }
+        else {
+            entry.target.style.animation = 'none';
+        }
+    })
+
+})
+
+keys.forEach(key => {
+    observer.observe(key)
+})
+const texts= document.querySelectorAll('.anim-up');
+
+observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+        if(entry.intersectionRatio > 0) {
+            entry.target.style.animation = `anim2 2s ${entry.target.dataset.delay} forwards ease-in-out`;
+        }
+        else {
+            entry.target.style.animation = 'none';
+        }
+    })
+
+})
+
+texts.forEach(text => {
+    observer.observe(text)
+})

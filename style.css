@@ -410,7 +410,34 @@ footer{
       opacity: 1;
     }
   }
+.anim-up {
+    opacity: 0;
+}
 
+@keyframes anim2 {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to  {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+.anim-left {
+    opacity: 0;
+}
+
+@keyframes anim3 {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to  {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 
 
